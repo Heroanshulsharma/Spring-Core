@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+<bean name="Employee1" class="org.springcore.collections.Employee">
+    <property name="name" value="Anshul"/>
+    <property name="girlfriends">
+        <list>
+            <value>Girl 1</value>
+            <value>Girl 2</value>
+            <value>Girl 3</value>
+            <value>Girl 4</value>
+        </list>
+    </property>
+    <property name="friends">
+        <set>
+            <value>Friend 1</value>
+            <value>Friend 2</value>
+            <value>Friend 3</value>
+            <value>Friend 4</value>
+        </set>
+    </property>
+    <property name="extraMapForDemo">
+        <map>
+            <entry key="Key1" value="Value 1"/>
+            <entry key="Key2" value="Value 2"/>
+            <entry key="Key3" value="Value 3"/>
+            <entry key="Key4" value="Value 4"/>
+        </map>
+
+    </property>
+</bean>
+</beans>

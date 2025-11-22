@@ -1,4 +1,4 @@
-package org.springcore;
+package org.springcore.SetterInjection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -11,11 +11,13 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
 
         ApplicationContext context = new ClassPathXmlApplicationContext("configSetter.xml");
 
         System.out.println(context.getBean("Student1"));
+        System.out.println(context.getBean("Student2"));
+
+
 
     }
 }

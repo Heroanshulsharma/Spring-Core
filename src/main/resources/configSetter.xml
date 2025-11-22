@@ -2,23 +2,19 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="
            http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="org.springcore.SetterInjection.Student" name="Student1">
-        <property name="studentId">
-            <value>1</value>
-        </property>
-        <property name="studentName">
-            <value>Anshul</value>
-        </property>
-        <property name="studentAddress">
-            <value>India</value>
-        </property>
+    <bean class="org.springcore.SetterInjection.Student" name="Student1" p:studentId="1" p:studentName="Anshul" p:studentAddress="India"/>
+<!--        <property name="studentId" value="1"/>-->
+<!--        <property name="studentName" value="Anshul"/>-->
+<!--        <property name="studentAddress" value="India"/>-->
+<!--    </bean>-->
+    <bean class="org.springcore.SetterInjection.Student" name="Student2" p:studentId="2" p:studentName="Lavins" p:studentAddress="USA"/>
 
-    </bean>
 
 </beans>
