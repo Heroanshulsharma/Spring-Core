@@ -1,0 +1,22 @@
+package org.springcore.autowiring.xml;
+
+public class Manager {
+    private String name;
+
+    public String name() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+}
